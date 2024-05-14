@@ -1,0 +1,27 @@
+<!--
+    extends:: is for template inheritance, where you define a base template (index.html) and extend it in other templates;
+    <extends 'index.html'>
+    <block content>
+    <endblock>
+
+    include:: simply import *; or as in C/AHK;
+    *note: comments for jinja is different from html;
+ -->
+{% extends 'index.html' %}
+{% block content %}
+<div class="image-template" style="padding:1rem;display:flex;justify-content:center; max-width: 400px; max-height: auto; overflow:hidden; margin: 0 auto;">
+    <div id="loading" style="display: none;">Loading...</div>
+    {% include 'image.html' %}
+</div>
+<!-- search bar with Go button -->
+<div class="search-body" style="display:flex;justify-content:center;">
+    <form>
+        <input style="border-radius: 2rem;padding: 13px 21px;width: 220px;text-align: center;color: #000000;font-size: larger;border: rgba(155,155,205,0.2);" name="search" class="search" type="text" placeholder="username" required>
+        <button style="background-color: #1a73e8; color: #fff; border: none; border-radius: 2rem; padding: 13px 21px; font-size: 16px; cursor: pointer;"
+        hx-post="/search"
+        hx-indicator="#loading"
+        hx-target="#imageframe">Get
+        </button>
+    </form>
+</div>
+{% endblock %}
