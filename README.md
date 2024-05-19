@@ -1,8 +1,8 @@
 # IG Profile Picture HD - WEB UI  
 an utility to download HD Instagram Profile Picture.  
+![preview](preview.png)  
 
-# Setup 🚀
-
+# Setup 🚀  
 - pip install requirements:  
 ```
 httpx
