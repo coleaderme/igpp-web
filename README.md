@@ -8,7 +8,7 @@ an utility to download HD Instagram Profile Picture.
 httpx
 Flask
 ```
-- add cookies and header from your instagram.com web login  
+- use curlconverter.com add cookies and headers from your instagram.com web login.  
 - paste in secrets_session.py  
 
 ```bash
