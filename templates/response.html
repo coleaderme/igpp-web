@@ -16,7 +16,7 @@
     <form>
         <input id="search" name="search" type="text" placeholder="username" required>
         <button
-        onclick="document.getElementById('imageframe').innerHTML='Loading...';" 
+        onclick="document.getElementById('imageframe').innerHTML='Your request is in progress. Please wait a moment.';" 
         id="get-btn"
         hx-post="/search"
         hx-target="#imageframe">Get</button>
