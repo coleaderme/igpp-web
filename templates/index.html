@@ -7,9 +7,9 @@
     <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
     <script src="{{ url_for('static', filename='htmx.min.js') }}" defer></script>
   </head>
-  <body style="background-color: beige;">
-    <main class="container" style="display: flex;flex-direction: column;">
-        <h2 style="color: rgba(0, 0, 0, 0.75);margin-bottom: 5rem;display: flex;justify-content:center;font-family: sans-serif;">IG Profile Picture HD</h1>
+  <body>
+    <main class="container">
+        <h1>IG Profile Picture HD</h1>
           {% block content %}
           {% endblock %}
     </main>
