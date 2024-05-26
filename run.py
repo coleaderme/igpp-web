@@ -25,7 +25,8 @@ def send_image():
 
 
 def fetch(user: str) -> str:
-    if user == None:
+    if len(user) == 0:
+        print(f"[-] Blank search")
         return "bruh.jpg"
     with httpx.Client(headers=secrets_session.headers, cookies=secrets_session.cookies) as client:
         if igpp.download(username=user, client=client):
